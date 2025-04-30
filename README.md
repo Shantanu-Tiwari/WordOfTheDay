@@ -86,7 +86,3 @@ As you make changes to the project, the app will automatically refresh in the si
 ## Contributing
 
 Feel free to submit issues, fork the project, and send pull requests. Contributions are always welcome!
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
