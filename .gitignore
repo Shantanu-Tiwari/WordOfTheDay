@@ -35,4 +35,12 @@ yarn-error.*
 # typescript
 *.tsbuildinfo
 
+# build directory
+build/
+
+# log files
+*.log
+
 app-example
+
+.idea

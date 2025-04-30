@@ -1,50 +1,92 @@
-# Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# Word of the Day App
 
-## Get started
+This is a simple React Native app that allows users to discover a new word of the day, view their word history, and manage their vocabulary. The app uses Expo and Expo Router for navigation, and integrates with a local storage solution for saving and managing words.
 
-1. Install dependencies
+## Features
+- Discover a new word of the day
+- View saved word history
+- Clear history and navigate back to home
+- Responsive and minimal design
 
-   ```bash
-   npm install
-   ```
+## Prerequisites
 
-2. Start the app
+Before running the project, make sure you have the following installed:
 
-   ```bash
-    npx expo start
-   ```
+- **Node.js**: Make sure you have Node.js installed. You can download it from [nodejs.org](https://nodejs.org/).
+- **Expo CLI**: You can install Expo CLI globally by running:
+  
+  ```bash
+  npm install -g expo-cli
+  ```
 
-In the output, you'll find options to open the app in a
+- **Xcode** (for iOS simulation): Required for running the app on the iOS simulator.
+- **Android Studio** (for Android simulation): Required for running the app on the Android emulator.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Getting Started
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### 1. Clone the Repository
 
-## Get a fresh project
-
-When you're ready, run:
+First, clone the repository to your local machine:
 
 ```bash
-npm run reset-project
+git clone https://github.com/yourusername/word-of-the-day.git
+cd word-of-the-day
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2. Install Dependencies
 
-## Learn more
+Run the following command to install the required dependencies:
 
-To learn more about developing your project with Expo, look at the following resources:
+```bash
+npm install
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### 3. Run the App
 
-## Join the community
+#### iOS
 
-Join our community of developers creating universal apps.
+To run the app on the iOS simulator, use the following command:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```bash
+expo start --ios
+```
+
+This will open Expo in your browser, and the app will automatically start in the iOS simulator. If you have Xcode installed, it will launch the simulator and display the app.
+
+#### Android
+
+To run the app on the Android emulator, use the following command:
+
+```bash
+expo start --android
+```
+
+This will open Expo in your browser, and the app will start on your Android emulator. If Android Studio and an emulator are set up correctly, Expo will automatically launch the app on the emulator.
+
+### 4. Making Changes
+
+As you make changes to the project, the app will automatically refresh in the simulator or emulator to reflect your changes.
+
+## Project Structure
+
+- **components**: Reusable UI components like `WordCard`.
+- **utils**: Utility functions for word generation and local storage.
+- **screens**: The main screens of the app (`HomeScreen`, `HistoryScreen`).
+- **types**: TypeScript types used throughout the app.
+- **App.tsx**: The entry point for the app.
+- **app**: Expo Router's file structure (pages for routing).
+
+## Troubleshooting
+
+- **"expo" command not found**: If you get an error saying that the `expo` command is not found, try running `npm install -g expo-cli` to install Expo globally.
+- **App not showing in the simulator**: Ensure you have Xcode and Android Studio installed and configured correctly.
+- **Simulator/Emulator not starting**: Check if the simulator/emulator is running. You can manually start it from Xcode (for iOS) or Android Studio (for Android).
+
+## Contributing
+
+Feel free to submit issues, fork the project, and send pull requests. Contributions are always welcome!
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
